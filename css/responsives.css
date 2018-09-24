@@ -1,0 +1,40 @@
+ 
+ @media only screen and (min-width: 1200px) {
+    .container {
+      width: 1200px;
+    }
+ } 
+  @media only screen and (max-width: 1199px) {
+  
+ } 
+  @media only screen and (max-width: 991px) {
+   
+ 
+
+
+  }
+    @media only screen and (max-width: 768px) {
+    
+ 
+    } 
+   @media only screen and (max-width: 767px) {
+    
+   }
+    @media only screen and (max-width: 505px) {
+    
+    }
+    @media only screen and (max-width: 480px) {
+     
+
+    } 
+    @media only screen and (max-width: 474px) {
+      
+    }
+     @media only screen and (max-width: 460px) {
+       
+     }
+      @media only screen and (max-width: 414px) {
+      
+
+      }
+      
