@@ -11,7 +11,13 @@ languages forder: /anguages
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
 h1,h2,h3,h4,h5,h6 {
 	margin: 0;
 }
@@ -22,8 +28,15 @@ a {
 	text-decoration: none;
 }
 ul,ol {
-	list-style: none;
 	padding: 0;
+}
+a:hover {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+	display: block;
+	height: auto;
 }
 #page {
 	width: 100%;
@@ -36,55 +49,152 @@ ul,ol {
 	    margin: 0;
 	    	border: none;
 }
-.main-menu {
+#main-menu {
 	padding: 0;
 
 }
-.main-menu ul {
+#main-menu ul {
 	padding: 0;
 	
 }
-.main-menu ul li {
+#main-menu ul li {
 	border-right: 2px solid #471AD1;
 }
-.main-menu ul li:last-child {
+#main-menu ul li:last-child {
 		border-right: 0;
 }
-.main-menu li a {
+#main-menu li a {
 	display: block;
-	font-size: 14px;
+	font-size: 12px;
 	color: #fff;
 	text-transform: capitalize;
 	font-weight: bold;
 	
 }
-.main-menu li a:hover {
+#main-menu li a:hover,#main-menu li a:active,#main-menu li a:focus {
 	background-color: #1da1f2;
-	color: #3300cc;
+	color: #fff;
 }
 .border-nav {
 	background-color: #1da1f2;
 	width: 100%;
 	height: 3px;
 }
-#footer {
-	background-color: #0033cc;
-	padding: 23px 68px 0;
+
+.main-home {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.block-slide {
+	margin: 20px 0;
+	padding: 0;
+}
+.block-slide .pro-img {
+	display: block; 
 	width: 100%;
 }
-#footer .col-left:first-child {
+.box-content {
 	padding-left: 0;
+}
+.entry-header {
+	min-height: 63px;
+}
+.entry-header h2{
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+.entry-header h2 a {
+	display: block;
+	color: #000;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.entry-thumbnail {
+	width: 100%;
+	margin-bottom: 12px;
+} 
+.entry-thumbnail img{
+	width: 300px;
+	height: 200px;
+}
+.the-post-block {
+	width: 33.33%;
+	float: left;
+	padding: 15px;
+}
+.the-post-block:first-child {
+	padding-left: 0;
+}
+
+.border-post-content {
+	width: 100%;
+	height:1px;
+	background-color: #ccc;
+	margin: 10px 0 15px;
+}
+.entry-content p {
+	font-size: 13px;
+	margin: 0;
+}
+.border-post-content::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.entry-content .mh-excerpt-more {
+	color: #1313CE;
+}
+
+.title-typical h4 {
+	font-weight: bold;
+}
+.list-typical {
+	margin-bottom: 10px;
+}
+.list-typical ul li {
+	margin-bottom: 10px;
+}
+.list-typical ul li a {
+	color: #000;
+	font-size: 19px;
+	font-weight: 500;
+}
+
+.box-gallery {
+	padding: ;
+	padding-right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#footer .col-left:first-child {
+	padding-left: 25px;
 }
 .title-image-footer h2 {
 	color: #fff;
+	font-size: 18px;
+	margin-bottom: 5px;
 	text-transform: uppercase;
 }
 .boder-footer {
-	width: 89.25%;
+	width: 97.25%;
 	height: 3px;
 	background-color: #1da1f2;
 	margin-bottom: 17px;
 }
+.title-contact-footer .boder-footer {
+	width: 100%;
+} 
 .box-wapper {
 	width: 100%;
 }
@@ -95,20 +205,34 @@ ul,ol {
 }
 .box-wapper .pro-img {
 	float: left;
-	padding: 0 10px;
+	width: 33.33%;
+	padding-right: 5px;
 }
-.box-wapper .pro-img:first-child,.box-wapper .pro-img:last-child {
-	padding: 0;
+.box-wapper .pro-img img {
+	height: 130px;
+}
+
+.box-wapper .pro-img:last-child {
+		padding-right: 0px;
 }
 .title-contact-footer h2{
 		color: #fff;
+		font-size: 18px;
+		margin-bottom: 5px;
 	text-transform: uppercase;
 }
 .block-footer {
 	float: left;
 }
+.row-footer {
+	padding-bottom: 38px;
+	padding-top: 23px;
+	margin: 0;
+	background-color: #0033cc;
+}
 .block-footer p{
 	color: #FFF;
+	font-size: 12px;
 }
 .copyright {
 	background-color: #1da1f2;
@@ -121,4 +245,490 @@ ul,ol {
 	font-size: 14px;
 	margin: 0;
 	
+}
+
+/* post type page */
+
+.main-page {
+		width: 1000px;
+	margin: 0 auto;
+}
+
+
+
+
+/*  page single */
+.main-single {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.border-gallery {
+	width: 100%;
+	height: 2px;
+	background-color: #cc0000;
+}
+
+.tiele-gallery {
+
+	margin-bottom: 10px;
+}
+
+.tiele-gallery h3 {
+	font-size: 24px;
+	color: #222;
+	line-height: 1.4;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.readmore {
+	color: #352ef4;
+}
+.alet-success {
+	color: #352ef4;
+	text-align: right;
+}
+.w3-school {
+	padding: 0;
+	margin-top: 10px;
+}
+
+/* plugin slider */
+
+.mySlides {display:none}
+.demo {cursor:pointer}
+.w3-row-padding.w3-section {
+	padding: 0;
+}
+.w3-col.s4 {
+	padding: 0 5px;
+}
+.w3-col.s4:first-child {
+	padding-left: 0;
+}
+.w3-col.s4:last-child {
+		padding-right: 0;
+}
+.w3-button {
+	color: #fff;
+	font-size: 22px;
+	top: 45%;
+}
+.w3-button:hover {
+	background: none;
+}
+
+/*  contact page */
+
+.page-contact {
+	margin-bottom: 100px;
+	margin-top: 15px;
+}
+.wrapper-contact {
+	width: 85%;
+	padding: 0 25px;
+
+}
+.title-contact {
+	margin-bottom: 10px;
+}
+.title-contact h1{
+	font-size: 36px;
+	font-weight: 500;
+  font-family: arial 'Roboto', sans-serif;
+}
+.title-contact h4{
+	font-size: 24px;
+	font-family: arial 'Roboto', sans-serif;
+} 
+.wpcf7-form label{
+	color: #333;
+	font-weight: 500;
+	width: 100%;
+}
+.wpcf7-form-control {
+	background-color: #CCCFD5;
+	border: none;
+	padding: 5px 10px;
+	width: 100%;
+}
+.wpcf7-form-control:focus {
+	background-color: #f2f2f2;
+	border: 1px solid #D60505;	
+} 
+
+.wpcf7-form-control.wpcf7-submit {
+	background-color: #D60505;
+	padding: 10px 20px;
+	color: #FFF;
+	float: right;
+	width: 25%;
+	
+}
+.title-block-contact {
+	margin-bottom: 15px;
+	
+}
+.title-block-contact h4 {
+	font-size: 24px;
+	color: #333;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+.block-contact {
+	margin-bottom: 25px;
+}
+.list-contact {
+	list-style: none;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	
+}	
+.list-contact li{
+	margin-bottom: 10px;
+	font-size: 16px;
+	color: #333;
+}
+.list-contact li span {
+	color: #D60505;
+	font-size: 24px;
+}
+.list-contact li span .fa-map-marker {
+	font-size: 30px;
+}
+.list-contact li span .fa-phone {
+	font-size: 32px;
+} 
+.list-contact li span .fa-envelope {}
+
+/* trang thời khóa biểu */
+.title-page {
+	width: 1034px;
+	margin: 20px auto 15px;
+}
+
+
+.thoi_khoa_bieu {
+	width: 1034px;
+	margin: auto;
+}
+.table-bordered {
+	border: 2px solid #2f8adb;
+	width: 100%;
+	text-align: center;
+}
+.table-bordered th {
+	text-align: center;
+	font-size: 16px;
+	padding: 15px 0;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #1403EB;
+}
+.table-bordered tr{
+	border: 2px solid #2f8adb;
+	margin: auto;
+	}
+	.table-bordered td{
+	border: 2px solid #2f8adb;
+	padding: 15px 0;
+	color: #006bbe;
+	margin: auto;
+	font-size: 16px;
+	outline: 1px solid #bebebe;
+	text-transform: uppercase;
+	}
+
+	/* trang giới thiệu */
+	
+.elementor-section.elementor-section-boxed > .elementor-container {
+	width: 1040px;
+}
+	.elementor-widget-container h5 {
+	display: ;
+	font-size: 24px;
+	margin-bottom: 25px;
+	text-transform: uppercase;
+}
+	.elementor-widget-container ul {
+		display: inline-block;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		
+	} 
+		.elementor-widget-container ul .page_item a::before {
+			font-family: FontAwesome;
+			content: "\f061";
+			display: inline-block;
+			margin-right: 10px;
+			font-size: 16px;
+			color: #bdbcbc;
+		}
+		.elementor-widget-container ul .page_item {
+			padding: 5px 0;
+			border-bottom: 1px dashed #e4e4e4;
+		}
+		
+		.elementor-widget-container ul .page_item a {
+			color: #373737;
+			text-transform: uppercase;
+			font-size: 14px;
+			display: block;
+		}
+		.elementor-widget-container ul .page_item a:hover {
+			color: #0C1B81;
+		}
+
+		.elementor-widget-container .title-docoment{
+			margin-bottom: 25px;
+		}
+		.elementor-widget-container .title-docoment h3{
+			text-transform: uppercase;
+		}
+		.elementor-widget-container .vanban li {
+			border: none;
+			margin-bottom: 20px;
+			padding: 0;
+		}
+		.elementor-widget-container .vanban li a{
+			color: #333;
+		}
+		.elementor-widget-container .vanban li a span {
+			color: #2c7bce;
+			font-size: 24px;
+			margin-right: 5px;
+		}
+		.elementor-widget-container .title-wedgit {
+			
+		}
+
+		.elementor-widget-container .title-wedgit h3{
+			color: #333;
+			text-transform: uppercase;
+		} 
+
+		.elementor-widget-container  .wedgit li{
+			border-bottom: 1px solid #ccc;
+			color: #FFF;
+		}
+				.elementor-widget-container  .wedgit li a {
+					font-size: 15px;
+					display: block;
+					text-transform: uppercase;
+					font-weight: bold;
+					color: #384598;
+				}
+		 .wedgit li a span{
+		 	font-size: 32px;
+		 	margin-right: 5px;
+		 }
+
+
+
+
+		 /*  page tin tức */
+		 
+		 .title-tintuc {
+	width: 70%;
+	background-color: #2E53A3;
+	padding: 5px 20px;
+}
+.drop-title-mews .elementor-widget-container {
+	position: relative;
+}
+.title-tintuc::after {
+	content: '';
+	position: absolute;
+	width: 56px;
+	right: 25%;
+	transform: rotate(43deg);
+	background-color: #fff;
+	padding: 20px 0;
+	bottom: 30%;
+	z-index: 25;
+}
+
+.tintuc .mh-slider-content a h2{
+	font-size: 18px;
+	line-height: 1.5;
+	color: #009;
+}
+.title-tintuc h3{
+	color: #FFF;
+	text-transform: uppercase;
+	margin-left: 35px;
+}
+.drop-title-mews.elementor-widget:not(:last-child){
+	margin-bottom: 5px;
+}
+.block-news-flex-box .slides .mh-slider-item article {
+	width: 100%;
+	height: auto;
+	display: block;
+	padding: 20px 0;
+	border-top: 1px solid #2E53A3;
+	border-bottom: 1px solid #2E53A3;
+}
+.block-news-flex-box .slides .mh-slider-item article::after {
+	display: table;
+	content: "";
+	clear: both;
+}
+.block-news-flex-box .slides .mh-slider-item article a {
+	display: block;
+	width: 35%;
+	float: left;
+	padding-right: 25px;
+}
+.block-news-flex-box .slides .mh-slider-item article .mh-slider-caption {
+	width: 65%;
+	float: left;
+}
+.block-news-flex-box .slides .mh-slider-item article .mh-slider-caption a{
+	display: block;
+	width: 100%;
+	padding: 0;
+
+} 
+.f15-widget .mh-slider-item .post-1653 a img, .tintuc .mh-slider-item .post-1653 a img{
+	display: block;
+	width: 100%;
+	height: 350px;
+}
+.f15-widget .mh-slider-item .post-1653 a, .tintuc .mh-slider-item .post-1653 a {
+	display: block;
+	margin-bottom: 15px;
+}
+
+.block-news-flex-box  .mh-slider-content a h2 {
+	font-size: 18px;
+	color: #009;
+	margin-bottom: 10px;
+}
+.block-news-flex-box  .mh-slider-content .mh-excerpt-more {
+	color: #FF7217;
+}
+/*  trang lịch công tác*/
+
+
+.lich-cong-tac {
+	width: 100%;
+	height: auto;
+	margin-top: 14px;
+	margin-bottom: 25px;
+}
+.block-elementor-doc {
+	width: 100%;
+	margin-bottom: 15px;
+}
+.block-elementor-doc h3 {
+	font-size: 24px;
+	font-weight: 500;
+	font-family: arial;
+	text-transform: uppercase;
+	color: #333;
+	margin-bottom: 10px;
+}
+.block-elementor-doc span {
+	color: #9b9b9b;
+	display: block;
+	font-size: 14px;
+	margin-bottom: 6px;
+}
+
+.block-elementor-doc a{
+	color: #235BEA;
+	display: block;
+	font-weight: bold;
+	font-family: arial sans-serif;
+	font-size: 18px;
+}
+/* trang thư viện ảnh  */
+
+
+
+
+
+.gallery-thu-vien-anh .gallery-size-large {
+	margin: auto;
+}
+.carousel-image .elementor-col-100 .slick-slide-image {
+	height: 500px;
+}
+
+.gallery-thu-vien-anh .gallery-item {
+	float: left;
+	width: 33.33%;
+	padding-right: 15px;
+	text-align: center;
+	
+}
+.gallery-thu-vien-anh .gallery-item img {
+	height: 350px;
+}
+
+.layout-img .gallery-item .gallery-icon a .sattachment-medium {
+	margin: 0;
+}
+ .gallery-thu-vien-anh .gallery-item .gallery-caption {
+ 	text-transform: uppercase;
+ 	font-size: 14px;
+ 	font-weight: 500;
+ 	color: #111;
+ 	font-family: arial sans-serif;
+ }
+
+.gallery-thu-vien-anh .gallery-item:last-child {
+	padding-right: 0;
+}
+.gallery-thu-vien-anh .gallery-size-large::after {
+	display: table;
+	content: "";
+	clear: both;
+}
+
+
+
+/* widget of sidebar first */
+
+.widget_recent_entries {
+	display: block;
+	position: relative;
+}
+.widget_recent_entries h3::after {
+	width: 90%;
+	content: "";
+	display: block;
+	height: 4px;
+	background-color: #2f8adb;
+	margin-bottom: 5px;
+}
+.widget_recent_entries h3{
+	font-size: 18px;
+	line-height: 1.7;
+	display: block;
+	text-transform: uppercase;
+}
+
+
+.widget_recent_entries ul{
+	list-style-type: none;
+}
+.widget_recent_entries ul li {
+	display: block;
+	padding: 5px 0;
+	
+}
+.widget_recent_entries ul li a {
+	display: block;
+	font-size: 16px;
+	color: #000;
+}
+.widget_recent_entries ul li .post-date {
+	font-size: 12px;
+	display: block;
+	color: #bfbbbb;
 }
